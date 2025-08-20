@@ -27,7 +27,7 @@ my_other_method(already_a_proc) { |num| puts num }
 
 snacks = ['scone', 'pancake']
 snack_proc = Proc.new { p snacks }
-1.times { p snacks}
+1.times { snack_proc.call}
 snacks = 'waffle'
 
 snack_proc.call
